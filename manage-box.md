@@ -80,13 +80,63 @@ https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170509.0.0/provider
 vagrant box add ubuntu/trusty64 ~/downloads/virtualbox.box
 ```
 
+ubuntu/trusty64 是我给要安装的镜像起的名字，这个名字可以随便定义。后面的 ~/downloads/virtualbox.box 是镜像文件在本地电脑上的具体位置，你要根据自己的实际情况去修改这个镜像文件的路径。
 
+返回的内容：
 
+```
+==> box: Box file was not detected as metadata. Adding it directly...
+==> box: Adding box 'ubuntu/trusty64' (v0) for provider: 
+    box: Unpacking necessary files from: file:///Users/xiaoxue/downloads/virtualbox.box
+==> box: Successfully added box 'ubuntu/trusty64' (v0) for 'virtualbox'!
+```
 
+完成以后，再查看一下可用的镜像列表：
 
+```
+vagrant box list
+```
 
+现在会出现：
 
+```
+centos/7            (virtualbox, 1704.01)
+ubuntu/trusty64     (virtualbox, 0)
+```
 
+多了一个刚才手工安装的 ubuntu/trusty64 。
+
+## 升级镜像
+
+升级前先检查一下镜像是否有可用的升级，执行：
+
+```
+vagrant box outdated
+```
+
+返回：
+
+```
+Checking if box 'centos/7' is up to date...
+```
+
+执行升级：
+
+```
+vagrant box update
+```
+
+返回：
+
+```
+==> default: Checking for updates to 'centos/7'
+    default: Latest installed version: 1704.01
+    default: Version constraints: 
+    default: Provider: virtualbox
+==> default: Box 'centos/7' (v1704.01) is running the latest version.
+```
+
+## 删除镜像
 
 
 
