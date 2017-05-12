@@ -48,6 +48,42 @@ centos/7            (virtualbox, 1704.01)
 
 表示我的电脑上有一个名字是 centos/7 的镜像，这样如果为项目创建的虚拟机使用这个镜像的话，第一次启动虚拟机的时候，Vagrant 就不会去下载它了，直接会在电脑上复制一份这个镜像。
 
+使用命令可以安装新的镜像，比如你在 Atlas 上看到一个名字是 ubuntu/trusty64 的镜像，看名字应该知道这个镜像的操作系统是 Ubuntu，系统的版本是 trusty64（14.04 LTS）。安装这个镜像可以执行：
+
+```
+vagrant box add ubuntu/trusty64
+```
+
+Vagrant 会先去给你下载这个镜像：
+
+```
+==> box: Loading metadata for box 'ubuntu/trusty64'
+    box: URL: https://atlas.hashicorp.com/ubuntu/trusty64
+==> box: Adding box 'ubuntu/trusty64' (v20170509.0.0) for provider: virtualbox
+    box: Downloading: https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170509.0.0/providers/virtualbox.box
+    box: Progress: 6% (Rate: 169k/s, Estimated time remaining: 0:49:14)
+```
+
+上面的 Downloading 后面的东西就是这个镜像文件的直接的下载地址。如果你嫌直接用 Vagrant 在命令行下面下载比较慢，你可以复制这个镜像的下载地址，然后使用下载工具去下载这个镜像文件。
+
+终止正在执行的命令，按一下 `ctrl + C` 。
+
+下面是我要添加的镜像的直接下载地址，可以把它放在下载工具里去下载：
+
+```
+https://atlas.hashicorp.com/ubuntu/boxes/trusty64/versions/20170509.0.0/providers/virtualbox.box
+```
+
+下载任务完成以后，你会得到一个 .box 文件，我这就是 virtualbox.box，有了这个 box 文件，就可以手工执行命令去把它安装在电脑上，这样它就会出现在可用的镜像列表里了。执行命令：
+
+```
+vagrant box add ubuntu/trusty64 ~/downloads/virtualbox.box
+```
+
+
+
+
+
 
 
 
