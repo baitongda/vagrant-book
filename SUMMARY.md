@@ -7,8 +7,8 @@
 
 ## 虚拟机
 
-* [管理虚拟机](manage-vm.md)
 * [创建虚拟机](create-virtual-machine.md)
+* [管理虚拟机](manage-vm.md)
 * [管理镜像](manage-box.md)
 
 ## 附录
