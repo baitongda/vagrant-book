@@ -28,11 +28,15 @@
 
 [_https://www.vagrantup.com/downloads.html_](https://www.vagrantup.com/downloads.html)
 
+## 编辑器
 
+还需要一款文本编辑器，用你已经熟悉的。我用的是一款叫 Atom 的编辑器，你还没谱选择哪些编辑器，也可以先使用这款 Atom 。以后不喜欢再换 ：）
 
+**Atom 下载地址：**
 
+[_https://atom.io/_](https://atom.io/)
 
-
+> 软件下载地址可能会随时变化，找不到的话就问我们的朋友 — 搜索引擎。
 
 
 
