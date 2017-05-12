@@ -8,5 +8,7 @@ vagrant
 
 box
 
+guest
 
+host
 
