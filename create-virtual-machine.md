@@ -82,7 +82,7 @@ https://atlas.hashicorp.com/centos/boxes/7/versions/1704.01/providers/virtualbox
 
 上面提示正在导入 box 文件：`'centos/7'`
 
-#### 启动配置虚拟机
+#### 启动并配置虚拟机
 
 接下来 Vagrant 就开始去配置虚拟机了。具体输出的日志信息，跟你所做的配置与使用的镜像有关。在做具体配置的时候再去解释相关的日志。
 
