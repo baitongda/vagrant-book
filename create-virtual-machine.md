@@ -84,11 +84,9 @@ https://atlas.hashicorp.com/centos/boxes/7/versions/1704.01/providers/virtualbox
 
 #### 启动配置虚拟机
 
-接下来 Vagrant 就开始去配置虚拟机了。具体输出的日志信息，跟你所做的配置与使用的镜像有关。
+接下来 Vagrant 就开始去配置虚拟机了。具体输出的日志信息，跟你所做的配置与使用的镜像有关。在做具体配置的时候再去解释相关的日志。
 
-
-
-第一次启动全部的日志：
+**第一次启动全部的日志：**
 
 ```
 Bringing machine 'default' up with 'virtualbox' provider...
@@ -133,8 +131,6 @@ Bringing machine 'default' up with 'virtualbox' provider...
     default: in which case you may ignore this message.
 ==> default: Rsyncing folder: /Users/xiaoxue/Desktop/awesome-project/ => /vagrant
 ```
-
-
 
 ## 连接虚拟机
 
