@@ -145,8 +145,6 @@ console with proper permissions or use another synced folder type.
            In some cases useful info is found in syslog - try
            dmesg | tail or so.
 
-
-
 ## Virtualbox 类型的同步目录
 
 虚拟机软件你用的是 Virtualbox，在虚拟机上安装了 virtualbox guest addition 以后，你可以配置虚拟机使用 Virtualbox 类型的共享目录。这种类型的共享目录存在性能问题，如果网站应用只有少量文件还可以，如果文件数量太多，在这种类型的共享目录上运行的网站会非常慢。

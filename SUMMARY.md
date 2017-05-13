@@ -16,6 +16,7 @@
 * [虚拟机配置文件](xu-ni-ji-pei-zhi-wen-jian.md)
 * [虚拟机网络配置](network.md)
 * [虚拟机同步目录](synced-folder.md)
+* [端口转发](network-forwardedport.md)
 
 ## 附录
 
