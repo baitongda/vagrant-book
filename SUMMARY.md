@@ -13,8 +13,9 @@
 
 ## 配置
 
-* [虚拟机配置文件](pei-zhi/xu-ni-ji-pei-zhi-wen-jian.md)
-* [虚拟机网络配置](pei-zhi/network.md)
+* [虚拟机配置文件](xu-ni-ji-pei-zhi-wen-jian.md)
+* [虚拟机网络配置](network.md)
+* [虚拟机同步目录](synced-folder.md)
 
 ## 附录
 
