@@ -11,6 +11,10 @@
 * [管理虚拟机](manage-vm.md)
 * [管理镜像](manage-box.md)
 
+## 配置
+
+* [虚拟机配置文件](pei-zhi/xu-ni-ji-pei-zhi-wen-jian.md)
+
 ## 附录
 
 * [术语表](glossary.md)
