@@ -48,7 +48,7 @@ centos/7            (virtualbox, 1704.01)
 
 表示我的电脑上有一个名字是 centos/7 的镜像，这样如果为项目创建的虚拟机使用这个镜像的话，第一次启动虚拟机的时候，Vagrant 就不会去下载它了，直接会在电脑上复制一份这个镜像。
 
-使用命令可以安装新的镜像，比如你在 Atlas 上看到一个名字是 ubuntu/trusty64 的镜像，看名字应该知道这个镜像的操作系统是 Ubuntu，系统的版本是 trusty64（14.04 LTS）。安装这个镜像可以执行：
+使用命令可以安装新的镜像，比如你在 Atlas 上看到一个名字是 ubuntu/trusty64 的镜像，看名字应该知道这个镜像的操作系统是 Ubuntu，系统的版本是 trusty64。安装这个镜像可以执行：
 
 ```
 vagrant box add ubuntu/trusty64
@@ -138,5 +138,11 @@ vagrant box update
 
 ## 删除镜像
 
+不再需要的镜像可以从电脑中删除掉，执行：
 
+```
+vagrant box remove ubuntu/trusty64
+```
+
+命令最后的 `ubuntu/trusty64` 是要删除的镜像的名字。
 
