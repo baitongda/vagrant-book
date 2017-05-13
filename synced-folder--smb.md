@@ -33,7 +33,7 @@ config.vm.synced_folder "app", "/mnt", type: "smb", smb_username: "wanghao", smb
 
 显示正在挂载 SMB 类型的共享目录，这个目录在主机上的位置是：`C:/Users/wanghao/Desktop/awesome-project/app`，在虚拟机上的位置是 `/mnt` 。
 
-登录到虚拟机，进入到 /mnt，创建一个文件，退出虚拟机，再到项目下的 app 目录查看一下：
+登录到虚拟机，进入到 `/mnt`，创建一个文件，退出虚拟机，再到项目下的 app 目录查看一下：
 
 ```
 vagrant ssh
