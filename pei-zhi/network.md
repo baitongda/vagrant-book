@@ -133,7 +133,7 @@ sudo systemctl enable nginx
 sudo systemctl status nginx
 ```
 
- 在返回的信息里你会发现：
+在返回的信息里你会发现：
 
 ```
 Active: active (running)
@@ -149,27 +149,11 @@ Active: active (running)
 http://localhost:8080
 ```
 
+你会看到 NGINX 的欢迎界面， 在浏览器上访问的这个 localhost 表示的就是你当前用的这台电脑本身，冒号右边是一个具体的端口号，对这个地址的请求就相当于是在请求虚拟机上的 80 端口，在虚拟机上安装的 NGINX 会接受请求并返回请求需要的内容。
+
+## 私有网络
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-在
 
