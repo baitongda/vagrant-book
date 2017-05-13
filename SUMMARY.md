@@ -23,6 +23,8 @@
 
 * [虚拟机同步目录](synced-folder.md)
 * [NFS 类型的同步目录](nfs-lei-xing-de-tong-bu-mu-lu.md)
+* [SMB 类型的同步目录](smb-lei-xing-de-tong-bu-mu-lu.md)
+* [Virtualbox 类型的同步目录](virtualbox-lei-xing-de-tong-bu-mu-lu.md)
 
 ## 附录
 
