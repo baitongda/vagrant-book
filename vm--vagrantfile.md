@@ -1,7 +1,5 @@
 # 虚拟机配置文件
 
-**任务：**
-
 理解虚拟机的配置文件：Vagrantfile。
 
 ## Vagrantfile
