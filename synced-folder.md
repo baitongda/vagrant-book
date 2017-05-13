@@ -63,7 +63,5 @@ config.vm.synced_folder "./app", "/mnt"
 
 > Virtualbox 类型的同步目录性能低下，我们先介绍两种比它更快的同步目录。
 
-## 
-
 
 
