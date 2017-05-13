@@ -20,9 +20,11 @@ config.vm.synced_folder "app", "/mnt", type: "smb"
 config.vm.synced_folder "app", "/mnt", type: "smb", smb_username: "wanghao", smb_password: "密码"
 ```
 
-用了两个选项，`smb_username`_ 后面的值是你登录 Windows 主机的时候用的用户名，_`smb_password` 是登录用的密码。 
+用了两个选项，`smb_username`_ 后面的值是你登录 Windows 主机的时候用的用户名，_`smb_password` 是登录用的密码。重启虚拟机，配置的同步目录会生效。
 
-重启虚拟机，配置的同步目录会生效。在启动的时候，观察日志，你会发现：
+## 验证同步目录
+
+在启动的时候，观察日志，你会发现：
 
 ```
 ==> default: Mounting SMB shared folders...
@@ -31,7 +33,26 @@ config.vm.synced_folder "app", "/mnt", type: "smb", smb_username: "wanghao", smb
 
 显示正在挂载 SMB 类型的共享目录，这个目录在主机上的位置是：`C:/Users/wanghao/Desktop/awesome-project/app`，在虚拟机上的位置是 `/mnt` 。
 
+登录到虚拟机，进入到 /mnt，创建一个文件，退出虚拟机，再到项目下的 app 目录查看一下：
 
+```
+vagrant ssh
+
+#虚拟机
+cd /mnt
+touch hello.txt
+exit
+
+#主机
+cd app
+ls
+```
+
+你应该会在主机的项目下的 app 里看到在虚拟机上创建的 hello.txt，在主机上用编辑器打开这个文件，编辑一下文件里的内容，然后登录到虚拟机去查看编辑之后的结果。
+
+## 问题
+
+1 - 在 Windows 上的命令行工具必须要用管理员的身份去运行，不然会遇到下面这个错误：
 
 ```
 SMB shared folders require running Vagrant with administrative
@@ -40,27 +61,11 @@ network shares requires admin privileges. Please try again in a
 console with proper permissions or use another synced folder type.
 ```
 
-启动时：
+2 - Vagrant 1.9.4 设置 SMB 同步目录，会遇到上面这个错误，不管你是否使用的是管理员身份运行的命令行工具。
 
-vagrant 1.9.3
+3 - 降级到 Vagrant 1.9.3，启动主机时遇到问题，解决这个问题我手工编辑了一个文件里的输入错误。相关链接：[https://github.com/mitchellh/vagrant/issues/8404](https://github.com/mitchellh/vagrant/issues/8404)
 
-```
-      detected\_ids = detect\_owner\_group_ids\(machine, guest\__path, mount\_options, options\)
-
-      detected\_ids = detect\_owner\_group\_ids\(machine, guestpath, mount\_options, options\)
-```
-
-```
-==> default: Preparing SMB shared folders...
-    default: You will be asked for the username and password to use for the SMB
-    default: folders shortly. Please use the proper username/password of your
-    default: Windows account.
-    default:
-    default: Username: wanghao
-    default: Password (will be hidden):
-```
-
-提示
+4 - 如果不手工在虚拟机上安装 `cifs-utils`，启动虚拟机时会遇到下面的错误。
 
     ==> default: Mounting SMB shared folders...
         default: C:/Users/wanghao/Desktop/awesome-project/app => /mnt
@@ -82,14 +87,5 @@ vagrant 1.9.3
            In some cases useful info is found in syslog - try
            dmesg | tail or so.
 
-升级成 Vagrant 1.9.4，启动时提示：
 
-```
-SMB shared folders require running Vagrant with administrative
-privileges. This is a limitation of Windows, since creating new
-network shares requires admin privileges. Please try again in a
-console with proper permissions or use another synced folder type.
-```
-
-我确定已经使用管理员身份运行的命令行。
 
