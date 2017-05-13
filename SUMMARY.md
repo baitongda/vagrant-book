@@ -19,6 +19,7 @@
 
 ## 网络
 
+* [虚拟机网络配置](xu-ni-ji-wang-luo-pei-zhi.md)
 * [端口转发](network-forwardedport.md)
 * [私有网络](si-you-wang-luo.md)
 * [公有网络](gong-you-wang-luo.md)
