@@ -3,7 +3,7 @@
 ## 前奏
 
 * [介绍](README.md)
-* [准备](chapter1.md)
+* [准备](prepare-and-installation.md)
 
 ## 虚拟机
 
@@ -14,7 +14,7 @@
 
 ## 网络
 
-* [虚拟机网络配置](networking.md)
+* [虚拟机网络配置](network.md)
 * [端口转发](network--forwarded_port.md)
 * [私有网络](network--private_network.md)
 * [公有网络](network--public_network.md)
