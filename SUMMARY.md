@@ -21,7 +21,8 @@
 
 ## 同步目录
 
-* [虚拟机同步目录](synced-folder.md)
+* [虚拟机同步目录](xu-ni-ji-tong-bu-mu-lu.md)
+* [设置同步目录](she-zhi-tong-bu-mu-lu.md)
 * [NFS 类型的同步目录](synced-folder--nfs.md)
 * [SMB 类型的同步目录](synced-folder--smb.md)
 * [Virtualbox 类型的同步目录](synced-folder--virtualbox.md)
