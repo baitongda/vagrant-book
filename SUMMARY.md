@@ -28,5 +28,6 @@
 
 ## 附录
 
+* [相关资料](appendix--sources.md)
 * [术语表](glossary.md)
 
