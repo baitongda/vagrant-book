@@ -87,7 +87,7 @@ ubuntu/trusty64 是我给要安装的镜像起的名字，这个名字可以随�
 ```
 ==> box: Box file was not detected as metadata. Adding it directly...
 ==> box: Adding box 'ubuntu/trusty64' (v0) for provider: 
-    box: Unpacking necessary files from: file:///Users/xiaoxue/downloads/virtualbox.box
+    box: Unpacking necessary files from: file:///Users/wanghao/downloads/virtualbox.box
 ==> box: Successfully added box 'ubuntu/trusty64' (v0) for 'virtualbox'!
 ```
 
@@ -165,6 +165,4 @@ Removing box 'ubuntu/trusty64' (v0) with provider 'virtualbox'...
 ```
 
 提示要删除的镜像至少在一个项目里用到了，要删除这个镜像有可能会破坏环境，建议你先去销毁使用了这个要删除的镜像的地方。确定要删除这个镜像可以输入 `y` ，即使你删除了安装在电脑上的镜像，已经使用这个镜像创建的我虚拟机也仍然是可以正常使用的。不过为了更安全一些，你最好在删除镜像之前 ，先去销毁所有使用了这个镜像创建的虚拟机。
-
-
 
