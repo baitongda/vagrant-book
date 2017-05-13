@@ -108,7 +108,7 @@ ubuntu/trusty64     (virtualbox, 0)
 
 ## 升级镜像
 
-升级前先检查一下镜像是否有可用的升级，执行：
+你安装的在 Atlas 云服务上的镜像是可以升级的，在升级前先检查一下镜像是否有可用的升级，执行：
 
 ```
 vagrant box outdated
