@@ -270,8 +270,7 @@ vagrant reload
 7) awdl0
 ==> default: When choosing an interface, it is usually the one that is
 ==> default: being used to connect to the internet.
-    default: Which interface should the network bridge to? 
-
+    default: Which interface should the network bridge to?
 ```
 
 上面出现的这个列表是我的主机上可用的网卡，有些是真的，有些是虚拟出来的，在你那里看到的这个列表可能会不太一样。我的主机用的是 Wi-Fi 无线上网，所以我要选择 1 ，输入 `1`，按一下回车。
@@ -293,25 +292,23 @@ vagrant reload
 ip addr
 ```
 
-又会出
+又会出现新的网络配置，这次会出现：
+
+```
+192.168.31.225/24
+```
+
+`192.168.31.225` 就是虚拟机在公有网络上的一个 IP 地址，因为我知道我的主机在这个网络上的 IP 地址也是 `192.168.31.x` 这种形式，所以我可以判断 `192.168.31.225` 是虚拟机在这个网络上的 IP 地址。你看到的 IP 地址可能跟我的不太一样，你需要根据路由器的 IP 地址段的配置去判断哪个才是虚拟机在公有网络上的 IP 地址。
+
+### 验证公有网络配置
+
+因为虚拟机上安装了 NGINX 这个 Web 服务器，验证配置的公有网络是否有效，你可以直接在浏览器上访问虚拟机在公有网络上的 IP 地址，如果能看到 NGINX 的欢迎界面，说明配置已经生效了。你可以再试一下用网络内的其它设备访问一下同样的 IP 地址，比如在你的手机或平板的浏览器上访问虚拟机的公有网络 IP 地址。
+
+```
+http://192.168.31.225
+```
+
+注意，你的路由器为虚拟机分配的这个公有网络的 IP 地址跟我的很可能是不一样的。
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
 
