@@ -1,4 +1,4 @@
-## 管理虚拟机
+# 管理虚拟机
 
 **任务：**
 
@@ -118,6 +118,4 @@ vagrant destroy -f
     then the machine is not created for that environment.
 
 这次提示 `not created`，表示还未创建。
-
-
 
