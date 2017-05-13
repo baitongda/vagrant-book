@@ -104,7 +104,13 @@ centos/7            (virtualbox, 1704.01)
 ubuntu/trusty64     (virtualbox, 0)
 ```
 
-多了一个刚才手工安装的 ubuntu/trusty64 。
+多了一个刚才手工安装的 ubuntu/trusty64 。现在你为项目创建虚拟机的时候就可以使用这个镜像了，像这样：
+
+```
+vagrant init ubuntu/trusty64
+```
+
+启动以后你会得到一个 Ubuntu 操作系统的虚拟机。
 
 ## 升级镜像
 
@@ -144,5 +150,21 @@ vagrant box update
 vagrant box remove ubuntu/trusty64
 ```
 
-命令最后的 `ubuntu/trusty64` 是要删除的镜像的名字。
+命令最后的 `ubuntu/trusty64` 是要删除的镜像的名字。你要删除的镜像如果已经用在某些项目上了，在删除这个镜像的时候会出现类似的提示：
+
+```
+Box 'ubuntu/trusty64' (v0) with provider 'virtualbox' appears
+to still be in use by at least one Vagrant environment. Removing
+the box could corrupt the environment. We recommend destroying
+these environments first:
+
+default (ID: 097743c9703241659cd6f5e9ea0ca4c0)
+
+Are you sure you want to remove this box? [y/N] y
+Removing box 'ubuntu/trusty64' (v0) with provider 'virtualbox'...
+```
+
+提示要删除的镜像至少在一个项目里用到了，要删除这个镜像有可能会破坏环境，建议你先去销毁使用了这个要删除的镜像的地方。确定要删除这个镜像可以输入 `y` ，即使你删除了安装在电脑上的镜像，已经使用这个镜像创建的我虚拟机也仍然是可以正常使用的。不过为了更安全一些，你最好在删除镜像之前 ，先去销毁所有使用了这个镜像创建的虚拟机。
+
+
 
