@@ -14,6 +14,7 @@
 ## 配置
 
 * [虚拟机配置文件](pei-zhi/xu-ni-ji-pei-zhi-wen-jian.md)
+* [虚拟机网络配置](pei-zhi/network.md)
 
 ## 附录
 
