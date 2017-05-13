@@ -1,14 +1,11 @@
 # 术语表
 
-virtualbox
+1. virtualbox
+2. virtual machine
+3. vagrant
+4. box
+5. guest
+6. host
 
-virtual machine
 
-vagrant
-
-box
-
-guest
-
-host
 
