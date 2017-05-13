@@ -21,10 +21,10 @@ touch hello.txt
 然后重启动一下虚拟机，观察启动日志，你会发现类似下面的这条信息：
 
 ```
-==> default: Rsyncing folder: /Users/xiaoxue/Desktop/awesome-project/ => /vagrant
+==> default: Rsyncing folder: /Users/wanghao/Desktop/awesome-project/ => /vagrant
 ```
 
-这里的 `/Users/xiaoxue/Desktop/awesome-project/` 是我的项目在主机上的位置，`=>` 后面的 `/vagrant` 是这个共享目录在虚拟机上的位置。
+这里的 `/Users/wanghao/Desktop/awesome-project/` 是我的项目在主机上的位置，`=>` 后面的 `/vagrant` 是这个共享目录在虚拟机上的位置。
 
 现在登录到虚拟机，进入到 `/vagrant` 这个目录的下面，查看它下面存储的东西：
 
