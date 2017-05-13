@@ -1,6 +1,6 @@
 # 创建虚拟机
 
-创建一台 Linux 系统的虚拟机，Linux 系统的类型选择的是 CentOS 7.x 。
+创建一台 Linux 系统的虚拟机，Linux 系统的类型选择的是 [CentOS](https://ninghao.net/affiliate/51729/package/centos) 7.x 。
 
 ## 创建项目
 
