@@ -37,7 +37,7 @@ drwxr-xr-x.  2 vagrant vagrant    0 May 13 12:33 mnt
 
 你有能力可以修改同步目录的拥有者与用户组，像这样：
 
-```
+```ruby
 config.vm.synced_folder "./app", "/mnt",
   owner: "root", group: "root"
 ```
