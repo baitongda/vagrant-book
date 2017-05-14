@@ -26,7 +26,7 @@
 * [NFS 类型的同步目录](synced-folder--nfs.md)
 * [SMB 类型的同步目录](synced-folder--smb.md)
 * [Virtualbox 类型的同步目录](synced-folder--virtualbox.md)
-* [同步目录的用户权限](synced-folder--owenship.md)
+* [同步目录的用户权限](synced-folder--ownership.md)
 
 ## 附录
 
