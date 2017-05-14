@@ -28,6 +28,10 @@
 * [Virtualbox 类型的同步目录](synced-folder--virtualbox.md)
 * [同步目录的用户权限](synced-folder--ownership.md)
 
+## 多机
+
+* [定义多台虚拟机](multi-machine.md)
+
 ## 附录
 
 * [相关资料](appendix--sources.md)
