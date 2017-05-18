@@ -3,8 +3,8 @@
 ## 前奏
 
 * [介绍](README.md)
-* [准备](prepare-and-installation.md)
 * [任务](task.md)
+* [准备](prepare-and-installation.md)
 
 ## 虚拟机
 
