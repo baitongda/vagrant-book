@@ -4,6 +4,7 @@
 
 * [介绍](README.md)
 * [准备](prepare-and-installation.md)
+* [任务](ren-wu.md)
 
 ## 虚拟机
 
